@@ -1,0 +1,212 @@
+@import url('common.css');
+@import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
+
+html,body{
+    height: 100%;
+    margin: 0; padding: 0;
+}
+/*전체*/
+.wrap{
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*로고 및 네비게이션*/
+.wrap header{
+    width: 100%;
+    height: 961px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap header h2{
+    margin-top: 50px;
+    margin-left: 316px;
+    margin-right: 100px;
+}
+
+.wrap header ul{
+   margin-right: 200px;
+}
+
+.wrap header ul li{
+    display: inline-block;
+}
+
+.wrap header ul li a{
+    color: #fff;
+    font-weight: bold;
+    padding: 50px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.wrap header ul li a:hover{
+    color: #fed136;
+    transition: .5s;
+}
+
+
+
+/*비주얼*/
+
+.wrap .visual{
+   width: 100%;
+   height: 50%;
+}
+
+
+.visual p{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    white-space: pre-line;
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+}
+.visual p small{
+}
+.wrap .visual p strong{
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom:50px
+}
+
+.wrap .visual p span{
+     font-size: 0.5em;
+     padding: 0px 20px;
+     background: #fed136;
+     color: #fff;
+}
+
+.wrap .visual p span:hover{
+     animation: spin .5s ;
+}
+
+@keyframes spin{
+100%{
+    transform: rotateY(360deg) }}
+
+
+/*콘텐츠*/
+
+section{
+    width: 100%;
+    margin: 0 auto;
+    background: #f7f7f7;
+}
+
+section > p{
+    margin:0px;
+    text-align: center;
+    white-space: pre-line;
+    font-size:1.5em;
+    color: #999;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+section > p strong{
+    font-size: 2.5em;
+    color: #333;
+}
+article{
+    width: 80%;
+    margin: 0 auto;
+}
+section article{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+section article ul{
+ padding: 15px;
+}
+
+section article ul li{
+    background: #fff;
+}
+
+section article ul li img{
+
+}
+
+section article ul li img:hover{
+    transform: scale(1.1);
+}
+
+section article ul li h2{
+    text-align: center;
+    
+
+}
+
+section article ul li p{
+    text-align: center;
+    color: #999;
+}
+
+
+/*푸터*/
+
+footer{
+   
+}
+
+.footertop{
+    display: flex;
+    justify-content: center;
+}
+.footertop img{
+    margin: 30px;
+    padding: 10px;
+}
+
+.footerbottom{
+   background: #333;
+}
+
+.footerbottom p{
+   color: #999;
+   text-align: center;
+   white-space: pre-line;
+   padding: 20px;
+   margin-bottom: 50px;
+
+}
+
+.footerbottom p strong{
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footerbottom p span{
+    display: block;
+    text-align: center;
+    
+}
+
+.footerbottom .put{
+    text-align: center;
+}
+.footerbottom span > input{
+    height: 70px;
+    width: 630px;
+    color: #999;
+}
+
+.footerbottom span input:nth-child(2){
+    background: #fed136;
+    border: none;
+    width: 320px;
+    height: 70px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+}
